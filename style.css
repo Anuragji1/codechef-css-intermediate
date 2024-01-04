@@ -1,0 +1,81 @@
+Statement) flex-grow is a property used with flex items inside a flex container. It determines how much an item should grow and take up available space within the flex container, relative to other items.
+
+If flex-grow is kept as zero, the flex item will not grow. It will maintain its original size based on its content or width setting, and won't take up any extra space.
+
+If flex-grow is kept as 1 (or any positive number), the flex item will grow and take up available space inside the container. If there is extra space available in the container after all the non-growing (flex-grow: 0) items have been laid out, the growing item(s) will share that space based on their flex-grow value.
+
+Here's how flex-grow works: if you have three items with flex-grow: 1, they will each take up an equal amount of the available space. If you have one item with flex-grow: 2 and two items with flex-grow: 1, the first item will take twice as much space as each of the other two items.
+
+
+Task
+Add the following changes from line 18 to 22
+
+#box1 {flex-grow: 1;}
+#box2 {flex-grow: 3;}
+#box3 {flex-grow: 1;}
+#box4 {flex-grow: 1;}
+#box5 {flex-grow: 1;}
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+SOLUTION= /* General styles */
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+/* Navigation tabs */
+.navTabs {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  text-decoration: none;
+  background-color: black;
+  transition: background-color 0.3s ease;
+  flex-wrap: wrap;
+}
+
+.nav-item:hover {
+  background-color: #454141;
+}
+
+.nav-item {
+  color: white;
+  cursor: pointer;
+  padding: 6px;
+  flex-direction: column-reverse;
+}
+
+/* Flex-grow examples (lines 18-22) */
+#box1 {
+  flex-grow: 1;
+}
+
+#box2 {
+  flex-grow: 3;
+}
+
+#box3 {
+  flex-grow: 1;
+}
+
+#box4 {
+  flex-grow: 1;
+}
+
+#box5 {
+  flex-grow: 1;
+}
