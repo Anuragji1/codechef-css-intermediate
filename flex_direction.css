@@ -1,0 +1,57 @@
+Statement) Great!
+
+Let's learn about flex-direction property now. This property is used to control the direction in which flex items are laid out inside a flex container. It determines whether the flex items are displayed in a horizontal row or vertical column. Refer the image below for a better understanding.
+
+ You can try various values such as `row, row-reverse, column, row-reverse` along with the the following task.
+Another property that we will be learning is flex-wrap. It helps you control how the flex items should behave when they run out of space in a flex container. It decides whether the items should stay in a single line and overflow, or if they should wrap to new lines below. This is useful for creating flexible and responsive layouts, especially when dealing with different screen sizes
+
+Task
+Add the following changes at line 8
+  flex-wrap: wrap;
+Add the following changes at line 28
+  flex-direction: column-reverse;
+After making the changed, click on 'Submit' to proceed. Don't forget to see how the appearance has changed post the changes by dragging the reducing the width of the preview tab.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SOLUTION= /* General styles */
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+/* Navigation tabs */
+.navTabs {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  text-decoration: none;
+  background-color: black;
+  transition: background-color 0.3s ease;
+  flex-wrap: wrap; /* Added at line 8 */
+}
+
+.nav-item:hover {
+  background-color: #454141;
+}
+
+.nav-item {
+  color: white;
+  cursor: pointer;
+  padding: 6px;
+  flex-direction: column-reverse; /* Added at line 28 */
+}
+
