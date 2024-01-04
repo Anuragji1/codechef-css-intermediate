@@ -1,0 +1,30 @@
+Statement) What happens when you use `flex-direction: row-reverse;` in CSS?
+Flex items are arranged in a row from right to left: flex-direction: row-reverse; changes the direction of flex items, laying them out in a horizontal row from right to left.
+Flex items are arranged in a row from left to right: flex-direction: row-reverse; does not affect the direction of flex items, and they remain in their original order from left to right.
+Flex items are arranged in a column from bottom to top: flex-direction: row-reverse; changes the direction of flex items, laying them out in a vertical column from bottom to top.
+Flex items are arranged in a column from top to bottom: flex-direction: row-reverse; does not affect the direction of flex items, and they remain in their original order from top to bottom.
+
+---------------------------------------------------------------
+SOLUTION= .flex-container {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.flex-item {
+  width: 50px;
+  height: 50px;
+  background-color: blue;
+  margin: 10px;
+}
+
+----------------------------------
+Explanation- When you use flex-direction: row-reverse; in CSS, flex items are arranged in a row from right to left. This means that the first item will be positioned on the rightmost side of the container, and subsequent items will be placed to its left, in reverse order of their appearance in the HTML code.
+
+In this example:
+
+The .flex-container class creates a flex container.
+The flex-direction: row-reverse; property arranges the flex items in a row from right to left.
+The .flex-item class styles the individual flex items with a blue background and some spacing.
+Visually, the flex items will be displayed like this:
+
+[5] [4] [3] [2] [1]
