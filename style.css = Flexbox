@@ -1,0 +1,79 @@
+Satement) In CSS Flexbox, the flex-shrink property is used to control how a flex item should shrink when there is not enough space available in the flex container. It determines the ability of a flex item to shrink relative to other flex items in the same container.
+
+It works exactly same as flex-grow property.
+
+Task
+Add the following changes from line 19
+
+#main #box2 {
+  flex-shrink: 3;
+}
+You can change the play with different values of flex-shrink. Additionally, you can try changing div value other than 4 and see yourself.
+
+------------------------------------------------------------------------------------------------------------------------------------------
+SOLUTION = 
+
+/* General styles */
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+/* Navigation tabs */
+.navTabs {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  text-decoration: none;
+  background-color: black;
+  transition: background-color 0.3s ease;
+  flex-wrap: wrap;
+}
+
+.nav-item:hover {
+  background-color: #454141;
+}
+
+.nav-item {
+  color: white;
+  cursor: pointer;
+  padding: 6px;
+  flex-direction: column-reverse;
+}
+
+/* Flex-grow and flex-shrink examples */
+#box1 {
+  flex-grow: 1;
+}
+
+#main #box2 { /* Line 19 */
+  flex-grow: 3;
+  flex-shrink: 3; /* Added for task */
+}
+
+#box3 {
+  flex-grow: 1;
+}
+
+#box4 {
+  flex-grow: 1;
+}
+
+#box5 {
+  flex-grow: 1;
+}
+-------------------------------------------------------------
