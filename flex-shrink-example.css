@@ -1,0 +1,37 @@
+Pop Quiz - Flex Shrink )
+In the next module, we will be learning how to build the website that we saw at the start of this module.
+
+We will be implementing concepts that we learnt in this module. Good Luck!
+Q.) What does the `flex-shrink` property determine in a flex container?
+It specifies the initial size of flex items within the container.
+It controls the ability of flex items to grow beyond their initial size.
+It determines the order in which flex items are displayed within the container.
+It defines the ability of flex items to shrink if the available space is insufficient.
+
+--------------------------------------------
+SOLUTION= The correct answer is: It defines the ability of flex items to shrink if the available space is insufficient.
+-------------------------
+Here's a more detailed explanation:
+
+Purpose: The flex-shrink property in CSS Flexbox controls how flex items should shrink when there's not enough space to accommodate them within their flex container. It determines the relative amount by which each item can decrease in size to prevent overflow.
+Values:
+0: The item won't shrink at all.
+1 (default): The item will shrink proportionally to its initial size.
+Higher values: The item will shrink more than other items with lower values.
+Interaction with flex-grow: flex-shrink works in conjunction with flex-grow to create flexible layouts that can both expand and contract as needed.
+----------------------
+CSS Code Example:- .flex-container {
+  display: flex;
+}
+
+.item1 {
+  flex-shrink: 0; /* Won't shrink */
+}
+
+.item2 {
+  flex-shrink: 2; /* Will shrink twice as much as item3 */
+}
+
+.item3 {
+  flex-shrink: 1; /* Will shrink proportionally */
+}
