@@ -1,0 +1,81 @@
+Statement) CSS Transforms are a powerful feature that allow you to manipulate the position, size, and orientation of HTML elements on a webpage. They are used to create various visual effects like moving, rotating, scaling, and skewing elements. Let's break down each transform function with examples:
+
+translate() Function: It moves an element along the x and y axes.
+transform: translate(50px, 20px);
+
+Example: On hover, Box 1 will move 50 pixels to the right and 20 pixels down.
+
+rotate() Function: It rotates an element by a specified angle.
+transform: rotate(45deg);
+
+Example: On hover, the Box 2 will move by 45 degrees clockwise.
+
+scale() Function: It scales an element by a given factor along the x and y axes.
+transform: scale(1.5, 0.8);
+
+Example: On hover, it will make the Box 3 1.5 times wider and 0.8 times shorter.
+
+Try hovering each and every boxes from the preview tab and see transformation yourself. You can play with different values of transformations in the lines 14, 30 and 45 in style.css.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+SOLUTION = style.css =
+    .box1 {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin: 50px 50px;
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    transition: transform 1s;
+    
+}
+
+.box1:hover {
+    /* The magic of CSS transforms! */
+    transform: translate(50px, 20px);
+}
+
+.box2 {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin: 100px 50px;
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    transition: transform 1s;
+}
+
+.box2:hover {
+    /* The magic of CSS transforms! */
+    transform: rotate(45deg);
+}
+
+.box3 {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin: 50px 50px;
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    transition: transform 1s;
+    
+}
+
+.box3:hover {
+    /* The magic of CSS transforms! */
+    transform: scale(1.5, 0.8);
+}
+-----------------------
+index.html= <body>
+    <div class="box1">Skew</div>
+    <div class="box2">Transform</div>
+    <div class="box3">Combined</div>
+
+</body>
