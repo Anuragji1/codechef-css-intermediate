@@ -1,0 +1,19 @@
+Statement) Which CSS transform property is used to scale an element both horizontally and vertically?
+scaleX
+scaleY
+scale
+resize
+
+-----------------------------
+
+SOLUTION = Correct Answer: scale.
+
+scale property: The scale() function within the transform property is used to uniformly scale an element both horizontally and vertically. It accepts one or two numerical values as parameters:
+
+One value: Scales both width and height equally.
+Two values: The first value scales the width, and the second value scales the height.
+Other scaling properties:
+
+scaleX(): Scales only the width of the element.
+scaleY(): Scales only the height of the element.
+resize: This property is not a CSS transform property. It's a non-standard property related to user resizing of elements, but it has limited browser support and is not recommended for general use.
