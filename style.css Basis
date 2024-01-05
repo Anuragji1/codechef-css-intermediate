@@ -1,0 +1,89 @@
+Problem Statement) In CSS Flexbox, the flex-basis property is used to set the initial size of a flex item before any available space is distributed among the flex items.
+
+Imagine you have a container (the flex container) and you want to put some items (flex items) inside it. By default, flex items try to fit within the container, but they might have different initial sizes based on their content or width settings.
+
+In flex-basis you can
+
+specify the length (pixels, percentage, etc) - flex-basis: <length>;
+keep it auto flex-basis: auto;
+set flex-basis to 0 (means the flex item will try to take up all the available space along the main axis) flex-basis: 0;
+Task
+Add the following changes at line 22
+
+#main2 #lightblue {
+  flex-basis: 100px;
+}
+You can change the play with different values of flex-basis. Additionally, you can try changing div value other than 4 and see yourself.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------
+SOLUTION = /* General styles */
+body,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+/* Navigation tabs */
+.navTabs {
+  list-style: none;
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  text-decoration: none;
+  background-color: black;
+  transition: background-color 0.3s ease;
+  flex-wrap: wrap;
+}
+
+.nav-item:hover {
+  background-color: #454141;
+}
+
+.nav-item {
+  color: white;
+  cursor: pointer;
+  padding: 6px;
+  flex-direction: column-reverse;
+}
+
+/* Flex-grow, flex-shrink, and flex-basis examples */
+#box1 {
+  flex-grow: 1;
+}
+
+#main #box2 {
+  flex-grow: 3;
+  flex-shrink: 3;
+}
+
+#box3 {
+  flex-grow: 1;
+}
+
+#box4 {
+  flex-grow: 1;
+}
+
+#box5 {
+  flex-grow: 1;
+}
+
+#main2 #lightblue { /* Line 22 */
+  flex-basis: 100px; /* Added for task */
+}
+--------------------------------------
+Key changes:
+
+Line 22: The flex-basis property has been added to #main2 #lightblue, setting its initial size to 100px. This means it will start with a width of 100px before any available space is distributed among the flex items.
