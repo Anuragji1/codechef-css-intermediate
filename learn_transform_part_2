@@ -1,0 +1,84 @@
+Statement) skew() Function: It skews an element by angles on the x and y axes.
+transform: skew(30deg, -10deg);
+
+Example: On hover, it will skew the 1st Box by 20 degrees on the x-axis and -10 degrees on the y-axis.
+
+transform-origin Property: It specifies the point around which transformations are applied.
+transform-origin: top left;
+
+transform: rotate(30deg);
+
+Example: On hover, it will rotate the 2nd Box by 45 degrees around its top-right corner.
+
+Combining Transformations: You can combine multiple transformations using the transform property.
+transform: translate(50px, 20px) rotate(30deg) scale(1.2);
+
+Example: This will move the .box element, rotate it by 30 degrees, and scale it by 1.2.
+
+CSS Transforms allow you to create dynamic effects without altering the actual layout of the elements. You can apply these transformations to elements on hover, click, or even through animations to create visually engaging interactions on your webpage.
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+SOLUTION = index.html :-
+<body>
+    <div class="box1">Skew</div>
+    <div class="box2">Transform</div>
+    <div class="box3">Combined</div>
+
+</body>
+
+------------
+style.css :- 
+.box1 {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin: 50px 50px;
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    transition: transform 1s;
+    
+}
+
+.box1:hover {
+    /* The magic of CSS transforms! */
+    transform: skew(30deg, -10deg);
+}
+
+.box2 {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin: 100px 50px;
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    transition: transform 1s;
+}
+
+.box2:hover {
+    /* The magic of CSS transforms! */
+    transform-origin: top left;
+    transform: rotate(30deg);
+}
+
+
+.box3 {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin: 100px 50px;
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    transition: transform 1s;
+}
+
+.box3:hover {
+    /* The magic of CSS transforms! */
+    transform: translate(50px, 20px) rotate(30deg) scale(1.2);
+}
+----------------------------------------------------------------------------
