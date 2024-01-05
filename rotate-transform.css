@@ -1,0 +1,17 @@
+CSS Code:- .rotated-element {
+  transform: rotate(45deg); /* Rotate 45 degrees clockwise */
+}
+
+---------------------------------------------
+Explanation:- Explanation:
+
+rotate property: The rotate() function within the transform property is used to rotate an element around its center point. It accepts a single value, which specifies the angle of rotation in degrees.
+
+Positive values rotate clockwise.
+Negative values rotate counterclockwise.
+Other transformation properties:
+
+translate(): Moves an element along the X and/or Y axis.
+scale(): Scales an element in size.
+skew(): Skews an element along one or both axes.
+matrix(): Applies a 2D transformation matrix for more complex transformations.
