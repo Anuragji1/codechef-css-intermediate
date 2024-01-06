@@ -1,0 +1,88 @@
+Statement) Aspect Ratio:
+Adjusting styles based on the aspect ratio of the viewport.
+
+Example:
+
+@media (aspect-ratio: 16/9) {
+  /* CSS rules for 16:9 aspect ratio */
+}
+Print Styles: Creating styles specifically for print media.
+Example:
+
+@media print {
+  /* CSS rules for printing */
+}
+Combining Conditions:
+You can combine multiple conditions using logical operators like and and or.
+
+Example:
+
+@media (max-width: 768px) and (orientation: landscape) {
+  /* CSS rules for landscape orientation on small screens */
+}
+Changing Layouts:
+Adjusting layout based on screen size. Example
+
+@media (max-width: 480px) {
+  /* Switch to a single-column layout on small screens */
+}
+Hiding/Showing Elements:
+Displaying or hiding elements based on the screen size.
+
+Example:
+
+@media (max-width: 600px) {
+  .mobile-only {
+    display: block;
+  }
+  .desktop-only {
+    display: none;
+  }
+}
+
+-----------------------------------
+SOLUTION= /* Previous media queries from the previous example */
+
+/* Aspect Ratio */
+@media (aspect-ratio: 16/9) {
+  /* Styles for 16:9 aspect ratio */
+}
+
+/* Print Styles */
+@media print {
+  body {
+    background-color: white;
+    color: black;
+  }
+  /* Other print-specific styles */
+}
+
+/* Combining Conditions */
+@media (max-width: 768px) and (orientation: landscape) {
+  /* Styles for landscape orientation on small screens */
+}
+
+/* Changing Layouts */
+@media (max-width: 480px) {
+  .container {
+    width: 100%; /* Single-column layout */
+  }
+}
+
+/* Hiding/Showing Elements */
+@media (max-width: 600px) {
+  .mobile-only {
+    display: block;
+  }
+  .desktop-only {
+    display: none;
+  }
+}
+
+
+-------------------------------
+Aspect Ratio: Demonstrates targeting specific viewport aspect ratios.
+Print Styles: Shows how to create print-specific styles.
+Combining Conditions: Illustrates combining media query conditions with logical operators.
+Changing Layouts: Adjusts layout based on screen size (e.g., single-column on small screens).
+Hiding/Showing Elements: Controls element visibility based on screen size.
