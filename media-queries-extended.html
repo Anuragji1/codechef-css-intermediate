@@ -1,0 +1,62 @@
+Statement) Aspect Ratio:
+Adjusting styles based on the aspect ratio of the viewport.
+
+Example:
+
+@media (aspect-ratio: 16/9) {
+  /* CSS rules for 16:9 aspect ratio */
+}
+Print Styles: Creating styles specifically for print media.
+Example:
+
+@media print {
+  /* CSS rules for printing */
+}
+Combining Conditions:
+You can combine multiple conditions using logical operators like and and or.
+
+Example:
+
+@media (max-width: 768px) and (orientation: landscape) {
+  /* CSS rules for landscape orientation on small screens */
+}
+Changing Layouts:
+Adjusting layout based on screen size. Example
+
+@media (max-width: 480px) {
+  /* Switch to a single-column layout on small screens */
+}
+Hiding/Showing Elements:
+Displaying or hiding elements based on the screen size.
+
+Example:
+
+@media (max-width: 600px) {
+  .mobile-only {
+    display: block;
+  }
+  .desktop-only {
+    display: none;
+  }
+}
+
+-----------------------------------
+SOLUTION= <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Queries Demo</title>
+  <link rel="stylesheet" href="media-queries-demo.css">
+</head>
+<body>
+  <h1>Media Queries Demo</h1>
+  <p>Resize the window to see the responsive changes.</p>
+  <div class="container">
+    <img src="image.jpg" alt="Sample Image">
+    <p>This is some sample content.</p>
+  </div>
+</body>
+</html>
+
+-------------------------------
