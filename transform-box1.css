@@ -1,0 +1,33 @@
+Statement) You have a box numbered 1. Apply a combination of two Transform properties on line 15
+
+rotate(360deg) scale(2)
+
+------------------------
+SOLUTION = .box {
+    color: white;
+    font-weight: bold;
+    font-size: 2em;
+    text-align: center;
+    margin: 100px 100px;
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    transition: transform 1s;
+}
+
+.box:hover {
+    /* Your code goes here */
+    /* Assuming the box element has an ID of "box1": */
+#box1 {
+  /* Other styles for box1 */
+  transform: rotate(360deg) scale(2); /* Apply both transformations on line 15 */
+}
+
+    /*----*/
+}
+--------------------------
+Explanation:
+
+Target element: The code assumes you're targeting an element with the ID "box1". Adjust the selector as needed if your box has a different ID or class.
+Multiple transformations: The transform property can take multiple functions separated by spaces, applying them in the order they're listed.
+Order of transformations: In this case, the rotation will be applied first, followed by the scaling. This means the box will be rotated 360 degrees (completing a full circle) and then doubled in size.
