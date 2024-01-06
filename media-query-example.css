@@ -1,0 +1,32 @@
+Statement) The basic syntax of a media query includes the @media keyword followed by a condition enclosed in parentheses.
+
+For example:
+
+@media (max-width: 500px) {
+  /* Styles to apply when the screen width is 500 pixels or less */
+}
+The condition (max-width: 500px) specifies that the enclosed styles should be applied when the screen width is 500 pixels or less. You can use various conditions based on screen width, height, orientation, and more to target specific devices or viewport sizes and apply custom styles accordingly.
+
+Example, in the adjacent preview tab, if you drag and reduce the width less than 500 px, the font size of the h1 will reduce and the background color will change to "lightblue". Try it out by reducing the width of the preview tab.
+
+------------------------------
+style.css= h1 {
+  font-size: 30px;
+  background-color: white; /* Default background color */
+}
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 20px; /* Smaller font size for narrow screens */
+    background-color: lightblue; /* Change background color */
+  }
+}
+
+---------------------------
+index.html= <body>
+  <h1>Responsive Design Example</h1>
+  <div class="container">
+    <p>This is a sample paragraph.</p>
+  </div>
+</body>
+----------------------------
