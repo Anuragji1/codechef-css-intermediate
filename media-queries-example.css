@@ -1,0 +1,64 @@
+Statement) Responsive design is an approach to seamlessly adapt websites to different screen sizes and devices - from large desktop monitors to small smartphones..
+
+A feature in CSS that helps you achieve this is media queries. Media queries are like a set of rules that your webpage follows to look good on different devices. They help you customize the appearance of your webpage based on factors like screen size, device type, or orientation.
+
+Let's learn more about media queries in the next lesson.
+
+-------------
+style.css = /* Target large screens (desktops/laptops) */
+@media (min-width: 1200px) {
+  body {
+    font-size: 16px;
+    margin: 50px;
+  }
+  h1 {
+    text-align: center;
+  }
+  .content {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+  }
+  .sidebar {
+    flex: 0.3;
+    background-color: #eee;
+    padding: 20px;
+  }
+  .main-content {
+    flex: 0.7;
+  }
+}
+
+/* Target medium screens (tablets) */
+@media (min-width: 768px) and (max-width: 1199px) {
+  body {
+    font-size: 14px;
+    margin: 30px;
+  }
+  .content {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .sidebar {
+    order: 2;
+  }
+}
+
+/* Target small screens (smartphones) */
+@media (max-width: 767px) {
+  body {
+    font-size: 12px;
+    margin: 20px;
+  }
+  .content {
+    width: 100%;
+  }
+  .sidebar,
+  .main-content {
+    width: 50%;
+  }
+  .sidebar {
+    margin-bottom: 20px;
+  }
+}
